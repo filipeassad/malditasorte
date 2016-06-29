@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#49ff00"
+    android:gravity="center|top">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#FFFFFF">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textColor="#49ff00"
+            android:textSize="30sp"
+            android:layout_gravity="center"/>
+
+    </FrameLayout>
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/logo"/>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnGerador"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="@string/btnGerador"
+            android:textSize="18sp"
+            android:background="@drawable/shape_botao_verde"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:id="@+id/btnBusca"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="@string/btnBusca"
+            android:textSize="18sp"
+            android:background="@drawable/shape_botao_verde"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:id="@+id/btnDadosSalvos"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="@string/btnDadosSalvos"
+            android:textSize="18sp"
+            android:background="@drawable/shape_botao_verde"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="@string/btnHistorico"
+            android:textSize="18sp"
+            android:background="@drawable/shape_botao_verde"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

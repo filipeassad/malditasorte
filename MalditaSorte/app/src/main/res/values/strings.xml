@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Maldita Sorte</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="Jogo">Jogo</string>
+    <string name="Data">Data</string>
+    <string name="Acertos">Acertos</string>
+    <string name="Valor">Valor</string>
+
+    <string name="btnGerador">Gerador</string>
+    <string name="btnBusca">Busca</string>
+    <string name="btnDadosSalvos">Dados Salvos</string>
+    <string name="btnHistorico">Histórico</string>
+    <string name="btnGerar">Gerar</string>
+    <string name="btnBuscar">Buscar</string>
+    <string name="btnAnteriores">Anteriores</string>
+
+
+    <string name="lb1Numero">1º Número:</string>
+    <string name="lb2Numero">2º Número:</string>
+    <string name="lb3Numero">3º Número:</string>
+    <string name="lb4Numero">4º Número:</string>
+    <string name="lbAleatorio">Aleatório:</string>
+
+</resources>
