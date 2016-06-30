@@ -14,6 +14,7 @@ public class TelaPrincipal extends Activity {
     private Button btnGerador;
     private Button btnBusca;
     private Button btnDadosSalvos;
+    private Button btnHistorico;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +24,7 @@ public class TelaPrincipal extends Activity {
         btnGerador      = (Button) findViewById(R.id.btnGerador);
         btnBusca        = (Button) findViewById(R.id.btnBusca);
         btnDadosSalvos  = (Button) findViewById(R.id.btnDadosSalvos);
+        btnHistorico    = (Button) findViewById(R.id.btnHistorico);
 
         acoes();
     }
@@ -49,6 +51,14 @@ public class TelaPrincipal extends Activity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(v.getContext(), DadosSalvos.class);
+                startActivity(intent);
+            }
+        });
+
+        btnHistorico.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(v.getContext(), HistoricoJogo.class);
                 startActivity(intent);
             }
         });
