@@ -42,7 +42,7 @@ public class HistoricoAdapter extends ArrayAdapter<Jogo> {
 
         txtJogo.setText(getItem(position).getNumJogo());
         txtData.setText(MetodosBasicos.DateToString(getItem(position).getDatJogo()));
-        txtAcerto.setText(getItem(position).getVlrJogo().toString());
+        txtAcerto.setText("");
 
 
         return convertView;

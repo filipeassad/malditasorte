@@ -13,6 +13,7 @@ public class Jogo {
     private String numJogo;
     private Date datJogo;
     private BigDecimal vlrJogo;
+    private int[] aNumeros;
 
     public Jogo() {
     }
@@ -63,5 +64,28 @@ public class Jogo {
 
     public void setVlrJogo(BigDecimal vlrJogo) {
         this.vlrJogo = vlrJogo;
+    }
+
+    public int[] getaNumeros() {
+        return aNumeros;
+    }
+
+    public void setaNumeros(int[] aNumeros) {
+
+        this.aNumeros = aNumeros;
+
+        if(aNumeros != null){
+            numJogo = "";
+
+            for(int i = 0; i < aNumeros.length; i++){
+                numJogo += aNumeros[i];
+                if(i == 4 || i == 9 || i == 14){
+                    numJogo += "\n";
+                }else{
+                    numJogo += " - ";
+                }
+            }
+        }
+
     }
 }

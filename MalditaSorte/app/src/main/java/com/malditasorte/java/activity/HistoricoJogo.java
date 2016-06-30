@@ -6,6 +6,7 @@ import android.widget.ListView;
 
 import com.malditasorte.java.adapter.HistoricoAdapter;
 import com.malditasorte.java.model.Jogo;
+import com.malditasorte.java.util.VariaveisEstaticas;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
@@ -26,29 +27,7 @@ public class HistoricoJogo extends Activity{
 
         lvHistorico = (ListView) findViewById(R.id.lvHistorico);
 
-        List<Jogo> listaJogo = new ArrayList<>();
-
-        listaJogo.add(new Jogo(1,"Filipe é gostoso","01 - 02 - 03 - 04 - 05 \n" +
-                                                    "06 - 07 - 08 - 09 - 10 \n" +
-                                                    "11 - 12 - 13 - 14 - 15 ",new Date(),new BigDecimal(1)));
-
-        listaJogo.add(new Jogo(1,"Filipe é gostoso","01 - 02 - 03 - 04 - 05 \n" +
-                "06 - 07 - 08 - 09 - 10 \n" +
-                "11 - 12 - 13 - 14 - 15 ",new Date(),new BigDecimal(1)));
-
-        listaJogo.add(new Jogo(1,"Filipe é gostoso","01 - 02 - 03 - 04 - 05 \n" +
-                "06 - 07 - 08 - 09 - 10 \n" +
-                "11 - 12 - 13 - 14 - 15 ",new Date(),new BigDecimal(1)));
-
-        listaJogo.add(new Jogo(1,"Filipe é gostoso","01 - 02 - 03 - 04 - 05 \n" +
-                "06 - 07 - 08 - 09 - 10 \n" +
-                "11 - 12 - 13 - 14 - 15 ",new Date(),new BigDecimal(1)));
-
-        listaJogo.add(new Jogo(1,"Filipe é gostoso","01 - 02 - 03 - 04 - 05 \n" +
-                "06 - 07 - 08 - 09 - 10 \n" +
-                "11 - 12 - 13 - 14 - 15 ",new Date(),new BigDecimal(1)));
-
-        HistoricoAdapter historicoAdapter = new HistoricoAdapter(this,R.layout.list_adapter_historico,listaJogo);
+        HistoricoAdapter historicoAdapter = new HistoricoAdapter(this,R.layout.list_adapter_historico, VariaveisEstaticas.getJogos());
 
         lvHistorico.setAdapter(historicoAdapter);
 

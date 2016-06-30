@@ -5,7 +5,6 @@
     android:layout_height="60dp"
     android:gravity="center">
 
-
     <TextView
         android:id="@+id/txtJogo"
         android:layout_width="120dp"
@@ -26,4 +25,5 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:textSize="18sp"/>
+
 </LinearLayout>
