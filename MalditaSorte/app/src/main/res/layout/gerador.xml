@@ -37,6 +37,7 @@
                 android:text="@string/lb1Numero"/>
 
             <EditText
+                android:id="@+id/edtVarSem"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:editable="false"/>
@@ -48,6 +49,7 @@
                 android:text="@string/lb2Numero"/>
 
             <EditText
+                android:id="@+id/edtVarMes"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:editable="false"/>
@@ -59,6 +61,7 @@
                 android:text="@string/lb3Numero"/>
 
             <EditText
+                android:id="@+id/edtDinoSem"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:editable="false"/>
@@ -70,6 +73,7 @@
                 android:text="@string/lb4Numero"/>
 
             <EditText
+                android:id="@+id/edtDinoMes"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:editable="false"/>
@@ -81,6 +85,7 @@
                 android:text="@string/lbAleatorio"/>
 
             <EditText
+                android:id="@+id/edtRandom"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:editable="false"/>
@@ -92,6 +97,7 @@
                 android:gravity="center">
 
                 <Button
+                    android:id="@+id/btnGerar"
                     android:layout_width="180dp"
                     android:layout_height="wrap_content"
                     android:text="@string/btnGerar"

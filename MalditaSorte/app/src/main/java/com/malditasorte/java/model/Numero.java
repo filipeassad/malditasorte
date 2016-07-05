@@ -40,10 +40,10 @@ public class Numero implements Comparable<Numero>{
     @Override
     public int compareTo(Numero another) {
         if (this.getnAcertos() < another.getnAcertos()) {
-            return -1;
+            return 1;
         }
         if (this.getnAcertos() > another.getnAcertos()) {
-            return 1;
+            return -1;
         }
         return 0;
     }
